@@ -132,6 +132,42 @@
                           KF(release)(KEYBOARD__Spacebar); }   \
     void R(name) (void) {}
 
+
+/**                                            macros/TYPE__UNICODE_LINUX/description
+ * Define the functions for unicode for Linux, (Windows, MAC and Linux need different unicode??!)
+ * key, to be non-dead.
+ */
+#define TYPE__UNICODE_LINUX(name, k1, k2, k3, k4)                   \
+    void P(name) (void) { \
+                          KF(press)(KEYBOARD__LeftControl); \
+                          KF(press)(KEYBOARD__LeftShift); \
+                          usb__kb__send_report(); \
+                          KF(press)(KEYBOARD__u_U); \
+                          usb__kb__send_report();              \
+                          KF(release)(KEYBOARD__u_U); \
+                          usb__kb__send_report();              \
+                          KF(press)(k1); \
+                          usb__kb__send_report();              \
+                          KF(release)(k1);  \
+                          usb__kb__send_report();              \
+                          KF(press)(k2); \
+                          usb__kb__send_report();              \
+                          KF(release)(k2);  \
+                          usb__kb__send_report();              \
+                          KF(press)(k3); \
+                          usb__kb__send_report();              \
+                          KF(release)(k3);  \
+                          usb__kb__send_report();              \
+                          KF(press)(k4); \
+                          usb__kb__send_report();              \
+                          KF(release)(k4);  \
+                          usb__kb__send_report();              \
+                          KF(release)(KEYBOARD__LeftControl); \
+                          KF(release)(KEYBOARD__LeftShift); \
+}   \
+    void R(name) (void) {}
+
+
 /**                                    macros/KEYS__LAYER__PUSH_POP/description
  * Define the functions for a layer push-pop key (i.e. a layer shift key).
  *
