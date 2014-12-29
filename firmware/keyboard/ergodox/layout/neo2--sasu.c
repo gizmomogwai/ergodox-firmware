@@ -47,42 +47,6 @@
 #include "./fragments/matrix-control.part.h"
 
 
-//unicode
-TYPE__UNICODE_LINUX(uc_leftArrow, 	KEYBOARD__2_At, 	KEYBOARD__1_Exclamation, 	KEYBOARD__d_D, 	KEYBOARD__0_RightParenthesis);
-TYPE__UNICODE_LINUX(uc_topArrow, 	KEYBOARD__2_At, 	KEYBOARD__1_Exclamation, 	KEYBOARD__d_D, 	KEYBOARD__1_Exclamation);
-TYPE__UNICODE_LINUX(uc_rightArrow, 	KEYBOARD__2_At, 	KEYBOARD__1_Exclamation, 	KEYBOARD__d_D, 	KEYBOARD__2_At);
-TYPE__UNICODE_LINUX(uc_bottomArrow, KEYBOARD__2_At, 	KEYBOARD__1_Exclamation, 	KEYBOARD__d_D, 	KEYBOARD__3_Pound);
-
-TYPE__UNICODE_LINUX(uc_paragraph, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__7_Ampersand);
-TYPE__UNICODE_LINUX(uc_high1, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__9_LeftParenthesis);
-TYPE__UNICODE_LINUX(uc_high2, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__2_At);
-TYPE__UNICODE_LINUX(uc_high3, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__3_Pound);
-TYPE__UNICODE_LINUX(uc_copyr, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__9_LeftParenthesis);
-TYPE__UNICODE_LINUX(uc_registerd, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__e_E);
-TYPE__UNICODE_LINUX(uc_degree, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__c_C);
-
-TYPE__UNICODE_LINUX(uc_bullet, 		KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__2_At, 				KEYBOARD__2_At);
-TYPE__UNICODE_LINUX(uc_usw, 		KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__2_At, 				KEYPAD__6_RightArrow);
-
-TYPE__UNICODE_LINUX(uc_infinity, 	KEYBOARD__2_At, 				KEYBOARD__2_At, 				KEYBOARD__1_Exclamation, 	KEYBOARD__e_E);
-TYPE__UNICODE_LINUX(uc_notEqual,	KEYBOARD__2_At, 				KEYBOARD__2_At, 				KEYBOARD__6_Caret, 	KEYBOARD__0_RightParenthesis);
-
-TYPE__UNICODE_LINUX(uc_female, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar, 		KEYBOARD__0_RightParenthesis);
-TYPE__UNICODE_LINUX(uc_male, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar, 		KEYBOARD__2_At);
-TYPE__UNICODE_LINUX(uc_coffee, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__1_Exclamation, 		KEYBOARD__5_Percent);
-TYPE__UNICODE_LINUX(uc_radioActive, KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__2_At, 				KEYBOARD__2_At);
-TYPE__UNICODE_LINUX(uc_star, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__5_Percent);
-TYPE__UNICODE_LINUX(uc_skull, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis);
-TYPE__UNICODE_LINUX(uc_noEntry, 	KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__4_Dollar);
-
-TYPE__UNICODE_LINUX(uc_heart, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar);
-TYPE__UNICODE_LINUX(uc_phone, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__0_RightParenthesis, 	KEYBOARD__6_Caret);
-TYPE__UNICODE_LINUX(uc_mail, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__0_RightParenthesis, 	KEYBOARD__9_LeftParenthesis);
-TYPE__UNICODE_LINUX(uc_ok, 			KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__1_Exclamation, 	KEYBOARD__4_Dollar);
-TYPE__UNICODE_LINUX(uc_ko, 			KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__1_Exclamation, 	KEYBOARD__8_Asterisk);
-
-
-
 // letters
 KEYS__DEFAULT(    a,              KEYBOARD__a_A                        );
 KEYS__DEFAULT(    b,              KEYBOARD__b_B                        );
@@ -158,6 +122,41 @@ TYPE__DEFAULT(    6,              KEYBOARD__6_Caret                    );
 TYPE__DEFAULT(    7,              KEYBOARD__7_Ampersand                );
 TYPE__DEFAULT(    8,              KEYBOARD__8_Asterisk                 );
 TYPE__DEFAULT(    9,              KEYBOARD__9_LeftParenthesis          );
+
+//unicode
+TYPE__UNICODE_LINUX(uc_leftArrow, 	KEYBOARD__2_At, 				KEYBOARD__1_Exclamation, 		KEYBOARD__d_D, 					KEYBOARD__0_RightParenthesis);
+TYPE__UNICODE_LINUX(uc_topArrow, 	KEYBOARD__2_At, 				KEYBOARD__1_Exclamation, 		KEYBOARD__d_D, 					KEYBOARD__1_Exclamation);
+TYPE__UNICODE_LINUX(uc_rightArrow, 	KEYBOARD__2_At, 				KEYBOARD__1_Exclamation, 		KEYBOARD__d_D, 					KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_bottomArrow, KEYBOARD__2_At, 				KEYBOARD__1_Exclamation, 		KEYBOARD__d_D, 					KEYBOARD__3_Pound);
+
+TYPE__UNICODE_LINUX(uc_paragraph, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__7_Ampersand);
+TYPE__UNICODE_LINUX(uc_high1, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__9_LeftParenthesis);
+TYPE__UNICODE_LINUX(uc_high2, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_high3, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__3_Pound);
+TYPE__UNICODE_LINUX(uc_copyr, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__9_LeftParenthesis);
+TYPE__UNICODE_LINUX(uc_registerd, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__e_E);
+TYPE__UNICODE_LINUX(uc_degree, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__c_C);
+
+TYPE__UNICODE_LINUX(uc_bullet, 		KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__2_At, 				KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_usw, 		KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__2_At, 				KEYPAD__6_RightArrow);
+
+TYPE__UNICODE_LINUX(uc_infinity, 	KEYBOARD__2_At, 				KEYBOARD__2_At, 				KEYBOARD__1_Exclamation, 		KEYBOARD__e_E);
+TYPE__UNICODE_LINUX(uc_notEqual,	KEYBOARD__2_At, 				KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__0_RightParenthesis);
+
+TYPE__UNICODE_LINUX(uc_female, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar, 			KEYBOARD__0_RightParenthesis);
+TYPE__UNICODE_LINUX(uc_male, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar, 			KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_coffee, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__1_Exclamation, 		KEYBOARD__5_Percent);
+TYPE__UNICODE_LINUX(uc_radioActive, KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__2_At, 				KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_star, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__5_Percent);
+TYPE__UNICODE_LINUX(uc_skull, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis);
+TYPE__UNICODE_LINUX(uc_noEntry, 	KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__4_Dollar);
+
+TYPE__UNICODE_LINUX(uc_heart, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar);
+TYPE__UNICODE_LINUX(uc_phone, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__0_RightParenthesis, 	KEYBOARD__6_Caret);
+TYPE__UNICODE_LINUX(uc_mail, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__0_RightParenthesis, 	KEYBOARD__9_LeftParenthesis);
+TYPE__UNICODE_LINUX(uc_ok, 			KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__1_Exclamation, 		KEYBOARD__4_Dollar);
+TYPE__UNICODE_LINUX(uc_ko, 			KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__1_Exclamation, 		KEYBOARD__8_Asterisk);
+
 
 // --- (keypad) ---
 TYPE__DEFAULT(    kp0,            KEYPAD__0_Insert                     );
@@ -403,7 +402,7 @@ static layout_t layout PROGMEM = {
                                                                 transp,   transp,   transp,
                                                                 transp,   transp,   transp,
 // right hand ..... ......... ......... ......... ......... ......... .........
-               uc_female,  	uc_heart,	uc_male,      	uc_phone,  uc_mail,   		transp,      uc_copyr,
+               uc_female,  	uc_heart,	uc_male,      	uc_phone,  	uc_mail,   		transp,      uc_copyr,
                transp,   	transp,     uc_coffee,   	transp,     uc_notEqual,   	uc_infinity, uc_registerd,
                          	transp,     dollar,      	eur,     	uc_radioActive, transp,      transp,
                transp,   	transp,     uc_paragraph,   uc_ok,   	uc_ko,   		uc_bullet,   uc_star,
