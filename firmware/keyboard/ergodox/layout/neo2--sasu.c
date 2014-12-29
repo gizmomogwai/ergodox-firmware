@@ -46,40 +46,77 @@
 
 #include "./fragments/matrix-control.part.h"
 
+
+//unicode
+TYPE__UNICODE_LINUX(uc_leftArrow, 	KEYBOARD__2_At, 	KEYBOARD__1_Exclamation, 	KEYBOARD__d_D, 	KEYBOARD__0_RightParenthesis);
+TYPE__UNICODE_LINUX(uc_topArrow, 	KEYBOARD__2_At, 	KEYBOARD__1_Exclamation, 	KEYBOARD__d_D, 	KEYBOARD__1_Exclamation);
+TYPE__UNICODE_LINUX(uc_rightArrow, 	KEYBOARD__2_At, 	KEYBOARD__1_Exclamation, 	KEYBOARD__d_D, 	KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_bottomArrow, KEYBOARD__2_At, 	KEYBOARD__1_Exclamation, 	KEYBOARD__d_D, 	KEYBOARD__3_Pound);
+
+TYPE__UNICODE_LINUX(uc_paragraph, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__7_Ampersand);
+TYPE__UNICODE_LINUX(uc_high1, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__9_LeftParenthesis);
+TYPE__UNICODE_LINUX(uc_high2, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_high3, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__3_Pound);
+TYPE__UNICODE_LINUX(uc_copyr, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__9_LeftParenthesis);
+TYPE__UNICODE_LINUX(uc_registerd, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__a_A, 					KEYBOARD__e_E);
+TYPE__UNICODE_LINUX(uc_degree, 		KEYBOARD__0_RightParenthesis, 	KEYBOARD__0_RightParenthesis, 	KEYBOARD__b_B, 					KEYBOARD__c_C);
+
+TYPE__UNICODE_LINUX(uc_bullet, 		KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__2_At, 				KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_usw, 		KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__2_At, 				KEYPAD__6_RightArrow);
+
+TYPE__UNICODE_LINUX(uc_infinity, 	KEYBOARD__2_At, 				KEYBOARD__2_At, 				KEYBOARD__1_Exclamation, 	KEYBOARD__e_E);
+TYPE__UNICODE_LINUX(uc_notEqual,	KEYBOARD__2_At, 				KEYBOARD__2_At, 				KEYBOARD__6_Caret, 	KEYBOARD__0_RightParenthesis);
+
+TYPE__UNICODE_LINUX(uc_female, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar, 		KEYBOARD__0_RightParenthesis);
+TYPE__UNICODE_LINUX(uc_male, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar, 		KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_coffee, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__1_Exclamation, 		KEYBOARD__5_Percent);
+TYPE__UNICODE_LINUX(uc_radioActive, KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__2_At, 				KEYBOARD__2_At);
+TYPE__UNICODE_LINUX(uc_star, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__5_Percent);
+TYPE__UNICODE_LINUX(uc_skull, 		KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__2_At, 				KEYBOARD__0_RightParenthesis);
+TYPE__UNICODE_LINUX(uc_noEntry, 	KEYBOARD__2_At, 				KEYBOARD__6_Caret, 				KEYBOARD__0_RightParenthesis, 	KEYBOARD__4_Dollar);
+
+TYPE__UNICODE_LINUX(uc_heart, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__6_Caret, 				KEYBOARD__4_Dollar);
+TYPE__UNICODE_LINUX(uc_phone, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__0_RightParenthesis, 	KEYBOARD__6_Caret);
+TYPE__UNICODE_LINUX(uc_mail, 		KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__0_RightParenthesis, 	KEYBOARD__9_LeftParenthesis);
+TYPE__UNICODE_LINUX(uc_ok, 			KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__1_Exclamation, 	KEYBOARD__4_Dollar);
+TYPE__UNICODE_LINUX(uc_ko, 			KEYBOARD__2_At, 				KEYBOARD__7_Ampersand, 			KEYBOARD__1_Exclamation, 	KEYBOARD__8_Asterisk);
+
+
+
 // letters
-TYPE__DEFAULT(    a,              KEYBOARD__a_A                        );
-TYPE__DEFAULT(    b,              KEYBOARD__b_B                        );
-TYPE__DEFAULT(    c,              KEYBOARD__c_C                        );
-TYPE__DEFAULT(    d,              KEYBOARD__d_D                        );
-TYPE__DEFAULT(    e,              KEYBOARD__e_E                        );
-TYPE__DEFAULT(    f,              KEYBOARD__f_F                        );
-TYPE__DEFAULT(    g,              KEYBOARD__g_G                        );
-TYPE__DEFAULT(    h,              KEYBOARD__h_H                        );
-TYPE__DEFAULT(    i,              KEYBOARD__i_I                        );
-TYPE__DEFAULT(    j,              KEYBOARD__j_J                        );
-TYPE__DEFAULT(    k,              KEYBOARD__k_K                        );
-TYPE__DEFAULT(    l,              KEYBOARD__l_L                        );
-TYPE__DEFAULT(    m,              KEYBOARD__m_M                        );
-TYPE__DEFAULT(    n,              KEYBOARD__n_N                        );
-TYPE__DEFAULT(    o,              KEYBOARD__o_O                        );
-TYPE__DEFAULT(    p,              KEYBOARD__p_P                        );
-TYPE__DEFAULT(    q,              KEYBOARD__q_Q                        );
-TYPE__DEFAULT(    r,              KEYBOARD__r_R                        );
-TYPE__DEFAULT(    s,              KEYBOARD__s_S                        );
-TYPE__DEFAULT(    t,              KEYBOARD__t_T                        );
-TYPE__DEFAULT(    u,              KEYBOARD__u_U                        );
-TYPE__DEFAULT(    v,              KEYBOARD__v_V                        );
-TYPE__DEFAULT(    w,              KEYBOARD__w_W                        );
-TYPE__DEFAULT(    x,              KEYBOARD__x_X                        );
-TYPE__DEFAULT(    y,              KEYBOARD__z_Z                        );
-TYPE__DEFAULT(    z,              KEYBOARD__y_Y                        );
-TYPE__DEFAULT(    sz,             KEYBOARD__Dash_Underscore            );
-TYPE__DEFAULT(    ue,             KEYBOARD__LeftBracket_LeftBrace      );
-TYPE__DEFAULT(    oe,             KEYBOARD__Semicolon_Colon            );
-TYPE__DEFAULT(    ae,             KEYBOARD__SingleQuote_DoubleQuote    );
+KEYS__DEFAULT(    a,              KEYBOARD__a_A                        );
+KEYS__DEFAULT(    b,              KEYBOARD__b_B                        );
+KEYS__DEFAULT(    c,              KEYBOARD__c_C                        );
+KEYS__DEFAULT(    d,              KEYBOARD__d_D                        );
+KEYS__DEFAULT(    e,              KEYBOARD__e_E                        );
+KEYS__DEFAULT(    f,              KEYBOARD__f_F                        );
+KEYS__DEFAULT(    g,              KEYBOARD__g_G                        );
+KEYS__DEFAULT(    h,              KEYBOARD__h_H                        );
+KEYS__DEFAULT(    i,              KEYBOARD__i_I                        );
+KEYS__DEFAULT(    j,              KEYBOARD__j_J                        );
+KEYS__DEFAULT(    k,              KEYBOARD__k_K                        );
+KEYS__DEFAULT(    l,              KEYBOARD__l_L                        );
+KEYS__DEFAULT(    m,              KEYBOARD__m_M                        );
+KEYS__DEFAULT(    n,              KEYBOARD__n_N                        );
+KEYS__DEFAULT(    o,              KEYBOARD__o_O                        );
+KEYS__DEFAULT(    p,              KEYBOARD__p_P                        );
+KEYS__DEFAULT(    q,              KEYBOARD__q_Q                        );
+KEYS__DEFAULT(    r,              KEYBOARD__r_R                        );
+KEYS__DEFAULT(    s,              KEYBOARD__s_S                        );
+KEYS__DEFAULT(    t,              KEYBOARD__t_T                        );
+KEYS__DEFAULT(    u,              KEYBOARD__u_U                        );
+KEYS__DEFAULT(    v,              KEYBOARD__v_V                        );
+KEYS__DEFAULT(    w,              KEYBOARD__w_W                        );
+KEYS__DEFAULT(    x,              KEYBOARD__x_X                        );
+KEYS__DEFAULT(    y,              KEYBOARD__z_Z                        );
+KEYS__DEFAULT(    z,              KEYBOARD__y_Y                        );
+KEYS__DEFAULT(    sz,             KEYBOARD__Dash_Underscore            );
+KEYS__DEFAULT(    ue,             KEYBOARD__LeftBracket_LeftBrace      );
+KEYS__DEFAULT(    oe,             KEYBOARD__Semicolon_Colon            );
+KEYS__DEFAULT(    ae,             KEYBOARD__SingleQuote_DoubleQuote    );
 
 // --- (shifted) ---
-TYPE__SHIFTED(    A,              KEYBOARD__a_A                        );
+KEYS__SHIFTED(    A,              KEYBOARD__a_A                        );
 TYPE__SHIFTED(    B,              KEYBOARD__b_B                        );
 TYPE__SHIFTED(    C,              KEYBOARD__c_C                        );
 TYPE__SHIFTED(    D,              KEYBOARD__d_D                        );
@@ -262,10 +299,10 @@ static layout_t layout PROGMEM = {
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
      esc,        1,        2,        3,        4,        5,      dead_caret,
-     nop,        x,        v,        l,        c,        w,      app,
+     nop,        x,        v,        l,        c,        w,      uc_rightArrow,
      tab,        u,        i,        a,        e,        o,
      shiftL,        ue,       oe,       ae,       p,        z,      space,
-     app,        guiL,     nop,      nop,      lpupo2l2,
+     lpupo4l4,        guiL,     nop,      nop,      lpupo2l2,
                                                                           nop, lpupo3l3,
                                                                 nop,      nop,      altL,
                                                                 enter, lpupo1l1,   ctrlL,
@@ -286,8 +323,8 @@ static layout_t layout PROGMEM = {
 // macro, unused,
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
-  transp,      transp,     transp,     transp,      transp,    transp,    transp,
-  transp,      nop,        undersc,    brktL,       brktR,     caret,     transp,
+  transp,      uc_high1,   uc_high2,   uc_high3,      transp,    transp,    transp,
+  transp,      uc_usw,     undersc,    brktL,       brktR,     caret,     transp,
   transp,      bkslash,    slash,      braceL,      braceR,    asterisk,
   transp,      pound,      dollar,     pipe,        tilde,     grave,     transp,
   transp,      transp,     transp,     transp,      transp,
@@ -295,11 +332,11 @@ static layout_t layout PROGMEM = {
                                                                 transp,   transp,   transp,
                                                                 transp,   transp,   transp,
 // right hand ..... ......... ......... ......... ......... ......... .........
-               transp,   transp,       eur,      	transp,     transp,   transp,      transp,
-               transp,   exclam,       lessThan,    grtrThan,   equal,    amp,         transp,
-                         question,     parenL,      parenR,     dash,     colon,       at,
-               transp,   plus,         percent,     dblQuote,   quote,    semicol,     transp,
-                                       transp,      transp,     transp,   transp,      transp,
+               dollar,   eur,			transp,     	transp,     transp,   transp,      transp,
+               transp,   exclam,       	lessThan,    	grtrThan,   equal,    amp,         transp,
+                         question,     	parenL,      	parenR,     dash,     colon,       at,
+               transp,   plus,         	percent,     	dblQuote,   quote,    semicol,     transp,
+                                       	transp,      	transp,     transp,   transp,      transp,
   transp,   transp,
   transp,   transp,   transp,
   transp,   transp,   transp  ),
@@ -347,6 +384,30 @@ static layout_t layout PROGMEM = {
                          transp,       transp,      transp,     transp,   transp,      transp,
                transp,   transp,       transp,      transp,     transp,   transp,      transp,
                                        transp,      transp,     transp,   transp,      transp,
+  transp,   transp,
+  transp,   transp,   transp,
+  transp,   transp,   transp  ),
+
+
+  // ............................................................................
+    MATRIX_LAYER(  // layer for unicode
+// macro, unused,
+       K,    nop,
+// left hand ...... ......... ......... ......... ......... ......... .........
+  uc_skull,     uc_degree,	uc_high2,		uc_high3,          	transp,        	transp,		transp,
+  uc_noEntry,	transp,     transp,         uc_topArrow,       	transp,       	transp,    	transp,
+  ctrlL,      	transp,    	uc_leftArrow,	uc_bottomArrow,     uc_rightArrow,  transp,
+  transp,      	transp,     transp,     	transp,      		transp,    		transp,    	transp,
+  btldr,      	transp,     transp,     	transp,      		transp,
+                                                                          transp,   transp,
+                                                                transp,   transp,   transp,
+                                                                transp,   transp,   transp,
+// right hand ..... ......... ......... ......... ......... ......... .........
+               uc_female,  	uc_heart,	uc_male,      	uc_phone,  uc_mail,   		transp,      uc_copyr,
+               transp,   	transp,     uc_coffee,   	transp,     uc_notEqual,   	uc_infinity, uc_registerd,
+                         	transp,     dollar,      	eur,     	uc_radioActive, transp,      transp,
+               transp,   	transp,     uc_paragraph,   uc_ok,   	uc_ko,   		uc_bullet,   uc_star,
+                                       	transp,      	transp,     transp,			transp,   	 transp,
   transp,   transp,
   transp,   transp,   transp,
   transp,   transp,   transp  ),
