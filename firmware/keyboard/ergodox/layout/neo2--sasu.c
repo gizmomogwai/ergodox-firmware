@@ -112,16 +112,16 @@ TYPE__DEFAULT(    OE,             KEYBOARD__Semicolon_Colon            );
 TYPE__DEFAULT(    AE,             KEYBOARD__SingleQuote_DoubleQuote    );
 
 // numbers
-TYPE__DEFAULT(    0,              KEYBOARD__0_RightParenthesis         );
-TYPE__DEFAULT(    1,              KEYBOARD__1_Exclamation              );
-TYPE__DEFAULT(    2,              KEYBOARD__2_At                       );
-TYPE__DEFAULT(    3,              KEYBOARD__3_Pound                    );
-TYPE__DEFAULT(    4,              KEYBOARD__4_Dollar                   );
-TYPE__DEFAULT(    5,              KEYBOARD__5_Percent                  );
-TYPE__DEFAULT(    6,              KEYBOARD__6_Caret                    );
-TYPE__DEFAULT(    7,              KEYBOARD__7_Ampersand                );
-TYPE__DEFAULT(    8,              KEYBOARD__8_Asterisk                 );
-TYPE__DEFAULT(    9,              KEYBOARD__9_LeftParenthesis          );
+KEYS__DEFAULT(    0,              KEYBOARD__0_RightParenthesis         );
+KEYS__DEFAULT(    1,              KEYBOARD__1_Exclamation              );
+KEYS__DEFAULT(    2,              KEYBOARD__2_At                       );
+KEYS__DEFAULT(    3,              KEYBOARD__3_Pound                    );
+KEYS__DEFAULT(    4,              KEYBOARD__4_Dollar                   );
+KEYS__DEFAULT(    5,              KEYBOARD__5_Percent                  );
+KEYS__DEFAULT(    6,              KEYBOARD__6_Caret                    );
+KEYS__DEFAULT(    7,              KEYBOARD__7_Ampersand                );
+KEYS__DEFAULT(    8,              KEYBOARD__8_Asterisk                 );
+KEYS__DEFAULT(    9,              KEYBOARD__9_LeftParenthesis          );
 
 //unicode
 TYPE__UNICODE_LINUX(uc_leftArrow, 	KEYBOARD__2_At, 				KEYBOARD__1_Exclamation, 		KEYBOARD__d_D, 					KEYBOARD__0_RightParenthesis);
@@ -310,7 +310,7 @@ static layout_t layout PROGMEM = {
                nop,         k,        h,        g,        f,        q,      sz,
                             s,        n,        r,        t,        d,      y,
                sz,          b,        m,        comma,    period,   j,      shiftR,
-                              			lpupo2l2, prScr, 	app,   	  guiR,   nop,
+                              			lpupo2l2,  app,   prScr,	guiR,   nop,
    altL, lpupo1l1,
    ctrlR,     nop,      nop,
    bs,    lpupo1l1,   space
